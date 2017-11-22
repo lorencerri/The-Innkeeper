@@ -6,7 +6,7 @@ exports.run = (client, message, args, tools) => {
     // Check to see if they entered any numbers
     if (!args) return message.channel.send({
         embed: {
-            description: "**Please enter numbers, seperated by spaces.**",
+            description: "**Please enter numbers, separated by spaces.**",
             color: 0x1D82B6
         }
     });
@@ -15,7 +15,7 @@ exports.run = (client, message, args, tools) => {
     for (var i in args) {
         if (isNaN(args[i])) return message.channel.send({
             embed: {
-                description: "**Please enter numbers, seperated by spaces.**",
+                description: "**Please enter numbers, separated by spaces.**",
                 color: 0x1D82B6
             }
         });
